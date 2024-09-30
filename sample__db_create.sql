@@ -1,7 +1,7 @@
 CREATE TABLE course
 (
-  crn   INT NOT NULL,
-  title    ,
+  crn   INT     NOT NULL,
+  title varchar NOT NULL,
   PRIMARY KEY (crn)
 );
 
@@ -15,7 +15,6 @@ CREATE TABLE student
 CREATE TABLE student_course
 (
   uid INT NOT NULL,
-  cid INT NOT NULL,
   crn INT NOT NULL,
   PRIMARY KEY (uid)
 );
