@@ -10,7 +10,7 @@
     "show": 431,
     "database": 16,
     "databaseName": "",
-    "canvasType": "@dineug/erd-editor/builtin-schema-sql",
+    "canvasType": "ERD",
     "language": 1,
     "tableNameCase": 4,
     "columnNameCase": 2,
@@ -87,15 +87,15 @@
           "GA0k--98cS6ADbMaSNHfr"
         ],
         "ui": {
-          "x": 539,
-          "y": 83,
+          "x": 540,
+          "y": 89,
           "zIndex": 23,
           "widthName": 82,
           "widthComment": 60,
           "color": ""
         },
         "meta": {
-          "updateAt": 1727730488868,
+          "updateAt": 1727730687064,
           "createAt": 1727729090372
         }
       },
@@ -112,7 +112,7 @@
           "TLGVKWeb2bBaIPAawD7xH"
         ],
         "ui": {
-          "x": 74,
+          "x": 75,
           "y": 292,
           "zIndex": 62,
           "widthName": 60,
@@ -120,7 +120,7 @@
           "color": ""
         },
         "meta": {
-          "updateAt": 1727729436389,
+          "updateAt": 1727730694024,
           "createAt": 1727729264459
         }
       }
@@ -395,8 +395,8 @@
           "columnIds": [
             "dLRQWV-KeUMx25vKRto8R"
           ],
-          "x": 539,
-          "y": 109,
+          "x": 540,
+          "y": 115,
           "direction": 1
         },
         "meta": {
@@ -414,7 +414,7 @@
           "columnIds": [
             "ppXNEasknVzySSDp2NXTa"
           ],
-          "x": 439,
+          "x": 440,
           "y": 344,
           "direction": 2
         },
@@ -423,8 +423,8 @@
           "columnIds": [
             "GA0k--98cS6ADbMaSNHfr"
           ],
-          "x": 539,
-          "y": 161,
+          "x": 540,
+          "y": 167,
           "direction": 1
         },
         "meta": {
