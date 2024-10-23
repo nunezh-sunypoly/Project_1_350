@@ -17,7 +17,7 @@ CREATE TABLE state_data (
 CREATE TABLE employment_data (
     employment_id SERIAL PRIMARY KEY,
     occupation_id INT REFERENCES occupations(occupation_id),
-    year YEAR NOT NULL,
+    date DATE NOT NULL,
     state_id INT REFERENCES state_data(state_id),
     employment INT NOT NULL,
     employment_rse DECIMAL(5, 2)
@@ -27,7 +27,7 @@ CREATE TABLE employment_data (
 CREATE TABLE wages (
     wage_id SERIAL PRIMARY KEY,
     occupation_id INT REFERENCES occupations(occupation_id),
-    year YEAR NOT NULL,
+    date DATE NOT NULL,
     state_id INT REFERENCES state_data(state_id),
     hourly_mean_wage DECIMAL(10, 2),
     annual_mean_wage DECIMAL(10, 2),
