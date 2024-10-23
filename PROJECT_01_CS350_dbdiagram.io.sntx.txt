@@ -1,0 +1,31 @@
+Table occupations {
+    occupation_id SERIAL [pk]
+    occupation_code VARCHAR(10)
+    occupation_title VARCHAR(255)
+    description TEXT
+}
+
+Table state_data {
+    state_id SERIAL [pk]
+    state_code VARCHAR(5)
+    state_name VARCHAR(50)
+}
+
+Table employment_data {
+    employment_id SERIAL [pk]
+    occupation_id INT [ref: > occupations.occupation_id]
+    year YEAR
+    state_id INT [ref: > state_data.state_id]
+    employment INT
+    employment_rse DECIMAL(5, 2)
+}
+
+Table wages {
+    wage_id SERIAL [pk]
+    occupation_id INT [ref: > occupations.occupation_id]
+    year YEAR
+    state_id INT [ref: > state_data.state_id]
+    hourly_mean_wage DECIMAL(10, 2)
+    annual_mean_wage DECIMAL(10, 2)
+    wage_rse DECIMAL(5, 2)
+}
