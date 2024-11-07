@@ -1,6 +1,6 @@
 -- Insert into occupations
-INSERT INTO occupations (occupation_code, occupation_title, description) VALUES
-('11-1021', 'General and Operations Managers', 'Plan, direct, or coordinate the operations of public or private sector organizations.');
+INSERT INTO occupations (occupation_id, occupation_code, occupation_title, description) VALUES
+(1, '11-1021', 'General and Operations Managers', 'Plan, direct, or coordinate the operations of public or private sector organizations.');
 
 -- Insert into state_data
 INSERT INTO state_data (state_id, state_code, state_name) VALUES
