@@ -1,3 +1,5 @@
+-- Created by Nicholas Littlefield
+
 CREATE or REPLACE FUNCTION add_prim_key() RETURNS void
 LANGUAGE plpgsql
 as $$
