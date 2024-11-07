@@ -13,6 +13,6 @@ INSERT INTO employment_data (employment_id, occupation_id, date, state_id, emplo
 (2, 1, to_date('11-06-2020', 'DD-MM-YYYY'), 2, 30000, 1.7); -- Texas
 
 -- Insert into wages
-INSERT INTO wages (occupation_id, date, state_id, hourly_mean_wage, annual_mean_wage, wage_rse) VALUES
-(1, to_date('19-09-2022', 'DD-MM-YYYY'), 1, 50.75, 105560, 1.2), -- California
-(1, to_date('11-06-2020', 'DD-MM-YYYY'), 2, 48.20, 100256, 1.4); -- Texas
+INSERT INTO wages (wage_id, occupation_id, date, state_id, hourly_mean_wage, annual_mean_wage, wage_rse) VALUES
+(1, 1, to_date('19-09-2022', 'DD-MM-YYYY'), 1, 50.75, 105560, 1.2), -- California
+(2, 1, to_date('11-06-2020', 'DD-MM-YYYY'), 2, 48.20, 100256, 1.4); -- Texas
