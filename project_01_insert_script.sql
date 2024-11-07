@@ -8,9 +8,9 @@ INSERT INTO state_data (state_id, state_code, state_name) VALUES
 (2, 'TX', 'Texas');
 
 -- Insert into employment_data
-INSERT INTO employment_data (occupation_id, date, state_id, employment, employment_rse) VALUES
-(1, to_date('19-09-2022', 'DD-MM-YYYY'), 1, 50000, 1.5), -- California
-(1, to_date('11-06-2020', 'DD-MM-YYYY'), 2, 30000, 1.7); -- Texas
+INSERT INTO employment_data (employment_id, occupation_id, date, state_id, employment, employment_rse) VALUES
+(1, 1, to_date('19-09-2022', 'DD-MM-YYYY'), 1, 50000, 1.5), -- California
+(2, 1, to_date('11-06-2020', 'DD-MM-YYYY'), 2, 30000, 1.7); -- Texas
 
 -- Insert into wages
 INSERT INTO wages (occupation_id, date, state_id, hourly_mean_wage, annual_mean_wage, wage_rse) VALUES
