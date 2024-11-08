@@ -29,15 +29,18 @@ INSERT INTO occupations (occupation_id, occupation_code, occupation_title, descr
 -- Insert into state_data
 INSERT INTO state_data (state_id, state_code, state_name) VALUES
 (3, 'NC', 'North Carolina'),
-(4, 'KY', 'Kentucky');
+(4, 'KY', 'Kentucky'),
+(5, 'PA', 'Pennsylvania');
 
 -- Insert into employment_data
 INSERT INTO employment_data (employment_id, occupation_id, date, state_id, employment, employment_rse) VALUES
 (3, 1, to_date('07-09-2018', 'DD-MM-YYYY'), 20000, 1.8), -- North Carolina
-(4, 1, to_date('19.06.2021', 'DD-MM-YYYY'), 30000, 1.7); -- Kentucky
+(4, 1, to_date('19.06.2021', 'DD-MM-YYYY'), 30000, 1.7), -- Kentucky
+(5, 1, to_date('13.12.2020', 'DD-MM-YYYY'), 50000, 1.4); -- Pennsylvania
 
 -- Insert into wages
 INSERT INTO wages (wage_id, occupation_id, date, state_id, hourly_mean_wage, annual_mean_wage, wage_rse) VALUES
 (3, 1, to_date('03.04.2003', 'DD-MM-YYYY'), 53.13, 100278, 1.7), -- North Carolina
-(4, 1, to_date('04.11.2007', 'DD-MM-YYYY'), 51.66, 105740, 1.5); -- Kentucky
+(4, 1, to_date('04.11.2007', 'DD-MM-YYYY'), 51.66, 105740, 1.5), -- Kentucky
+(5, 1, to_date('08.12.2016', 'DD-MM-YYYY'), 54.17, 100278, 1.9); -- Pennsylvania
 
