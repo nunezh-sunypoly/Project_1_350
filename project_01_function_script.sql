@@ -15,7 +15,7 @@ BEGIN
     -- Update employment data
     UPDATE employment_data
     SET employment = p_employment
-    WHERE occupation_id = p_occupation_id AND year = p_date AND state_id = p_state_id;
+    WHERE occupation_id = p_occupation_id AND date = p_date AND state_id = p_state_id;
 
     -- Update wages
     UPDATE wages
