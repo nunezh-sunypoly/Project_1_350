@@ -23,7 +23,6 @@ INSERT INTO wages (wage_id, occupation_id, date, state_id, hourly_mean_wage, ann
 --Insert script by Nicholas Littlefield
 
 -- Insert into occupations
-
 INSERT INTO occupations (occupation_id, occupation_code, occupation_title, description) VALUES
 (1, '11-1021', 'General and Operations Managers', 'Plan, direct, or coordinate the operations of public or private sector organizations.');
 
