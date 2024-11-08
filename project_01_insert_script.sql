@@ -1,18 +1,26 @@
+--Insert script by Nicholas Littlefield
+
 -- Insert into occupations
 INSERT INTO occupations (occupation_code, occupation_title, description) VALUES
-('11-1021', 'General and Operations Managers', 'Plan, direct, or coordinate the operations of public or private sector organizations.');
+('11-2011', 'Advertising and Promotions Managers', 'Plan, direct, or coordinate advertising policies and programs or produce collateral materials.');
 
 -- Insert into state_data
 INSERT INTO state_data (state_code, state_name) VALUES
-('CA', 'California'),
-('TX', 'Texas');
+('NY', 'New York'),
+('NC', 'North Carolina'),
+('KY', 'Kentucky'),
+('PA', 'Pennsylvania');
 
 -- Insert into employment_data
-INSERT INTO employment_data (occupation_id, year, state_id, employment, employment_rse) VALUES
-(1, CONVERT(date,'22.12.2023',104), 1, 50000, 1.5), -- California
-(1, CONVERT(date,'07.06.2015',104), 2, 30000, 1.7); -- Texas
+INSERT INTO employment_data (employment_id, date, employment, employment_rse) VALUES
+(1 , to_date('17-10-2022', 'DD-MM-YYYY'), 40000, 1.6), 
+(2 , to_date('07-09-2018', 'DD-MM-YYYY'), 20000, 1.8), 
+(3 , to_date('19.06.2021', 'DD-MM-YYYY'), 30000, 1.7), 
+(4 , to_date('13.12.2020', 'DD-MM-YYYY'), 50000, 1.4); 
 
 -- Insert into wages
-INSERT INTO wages (occupation_id, year, state_id, hourly_mean_wage, annual_mean_wage, wage_rse) VALUES
-(1, CONVERT(date,'11.09.2013',104), 1, 50.75, 105560, 1.2), -- California
-(1, CONVERT(date,'03.04.2003',104), 2, 48.20, 100256, 1.4); -- Texas
+INSERT INTO wages (date, hourly_mean_wage, annual_mean_wage, wage_rse) VALUES
+(to_date('11.09.2013', 'DD-MM-YYYY'), 51.66, 105740, 1.3), -- New York
+(to_date('03.04.2003', 'DD-MM-YYYY'), 53.13, 100278, 1.7), -- North Carolina
+(to_date('04.11.2007', 'DD-MM-YYYY'), 51.66, 105740, 1.5), -- Kentucky
+(to_date('08.12.2016', 'DD-MM-YYYY'), 53.13, 100278, 1.9); -- Pennsylvania
